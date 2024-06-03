@@ -40,58 +40,59 @@ struct Settings: View {
                         .frame(height: 3)
                         .padding(.top, -5)
                                         
-                    GeometryReader { AppTheme in
-                        VStack {
-                            HStack {
-                                Text("App Themes")
-                                    .font(.system(size: AppTheme.size.height / 20, weight: .heavy))
-                                    .foregroundStyle(Color(uiColor: themeColor != 7 ? UIColorTheme : colorScheme == .dark ? .white : .black))
-                                Spacer()
-                            }
-                            .frame(height: AppTheme.size.height / 20)
-                            .padding(.horizontal, 20)
-                            .padding(.top, 20)
-                            .padding(.bottom, -20)
+                    VStack(spacing: 20) {
+                        
+                        GeometryReader { AppTheme in
+                            VStack {
+                                HStack {
+                                    Text("App Themes")
+                                        .font(.system(size: AppTheme.size.height / 10, weight: .heavy))
+                                        .foregroundStyle(Color(uiColor: themeColor != 7 ? UIColorTheme : colorScheme == .dark ? .white : .black))
+                                    Spacer()
+                                }
 
-                            ScrollView(.horizontal, showsIndicators: false) {
-                                HStack(spacing: AppTheme.size.width / 25) {
-                                    ForEach(Theme.allCases, id: \.self) { theme in
-                                        themeButton(theme: theme, geometry: AppTheme)
+                                ScrollView(.horizontal, showsIndicators: false) {
+                                    HStack(spacing: AppTheme.size.width / 15) {
+                                        ForEach(Theme.allCases, id: \.self) { theme in
+                                            themeButton(theme: theme, geometry: AppTheme)
+                                        }
                                     }
                                 }
-                                .frame(height: AppTheme.size.height / 3.25)
-                                .padding(.horizontal, 10)
                             }
-                            .padding(.horizontal, 10)
+                            .frame(height: AppTheme.size.height)
+                            .padding()
+                            .background(RoundedRectangle(cornerRadius: 20))
+                            .foregroundStyle(colorScheme == .dark ? darkGray : lightGray)
                         }
-                        .background(RoundedRectangle(cornerRadius: 20))
-                        .foregroundStyle(colorScheme == .dark ? darkGray : lightGray)
-                        .padding(.bottom, 10)
+                        .padding(.bottom, 40)
+                        
+                        GeometryReader { IconTheme in
+                            VStack {
+                                HStack {
+                                    Text("App Icons")
+                                        .font(.system(size: IconTheme.size.width / 10, weight: .heavy))
+                                        .foregroundStyle(Color(uiColor: themeColor != 7 ? UIColorTheme : colorScheme == .dark ? .white : .black))
+                                    Spacer()
+                                }
+                                                        
+                                ScrollView(.horizontal, showsIndicators: false) {
+                                    HStack(spacing: IconTheme.size.width / 15) {
+                                        ForEach(Icon.allCases, id: \.self) { icon in
+                                            appIconButton(icon: icon, geometry: IconTheme)
+                                        }
+                                    }
+                                }
+                            }
+                            .frame(height: IconTheme.size.height)
+                            .padding()
+                            .background(RoundedRectangle(cornerRadius: 20))
+                            .foregroundStyle(colorScheme == .dark ? darkGray : lightGray)
+                        }
+                        .padding(.bottom, 40)
+                        
                     }
                     
-                    GeometryReader { IconTheme in
-                        VStack {
-                            HStack {
-                                Text("App Icons")
-                                    .font(.system(size: IconTheme.size.width / 10, weight: .heavy))
-                                    .foregroundStyle(Color(uiColor: themeColor != 7 ? UIColorTheme : colorScheme == .dark ? .white : .black))
-                                Spacer()
-                            }
-                                                    
-                            ScrollView(.horizontal, showsIndicators: false) {
-                                HStack(spacing: IconTheme.size.width / 15) {
-                                    ForEach(Icon.allCases, id: \.self) { icon in
-                                        appIconButton(icon: icon, geometry: IconTheme)
-                                    }
-                                }
-                            }
-                        }
-                        .frame(height: IconTheme.size.height)
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 20))
-                        .foregroundStyle(colorScheme == .dark ? darkGray : lightGray)
-                    }
-                    .padding(.bottom, 20)
+                    
                     
                 }
                 .padding(.horizontal, 20)
@@ -117,13 +118,13 @@ struct Settings: View {
             } label: {
                 Image(theme.imageName(colorScheme: colorScheme))
                     .resizable()
-                    .frame(width: geometry.size.height / 6, height: geometry.size.height / 6)
+                    .frame(width: geometry.size.height / 2, height: geometry.size.height / 2)
             }
             Image(systemName: themeColor == theme.rawValue ? "checkmark.circle.fill" : "circle")
-                .font(.system(size: geometry.size.height / 25, weight: .heavy))
+                .font(.system(size: geometry.size.height / 10, weight: .heavy))
                 .foregroundStyle(theme.color(colorScheme: colorScheme))
         }
-        .frame(width: geometry.size.height / 6, height: geometry.size.height / 4)
+        .frame(width: geometry.size.height / 2, height: geometry.size.height / 1.5)
     }
     
     @ViewBuilder

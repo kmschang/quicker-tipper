@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0EF776A02C0B7FEF007B6D57 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7769F2C0B7FEF007B6D57 /* Settings.swift */; };
+		0EF776A22C0E4098007B6D57 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF776A12C0E4098007B6D57 /* About.swift */; };
 		0EFC69792C06594400E96C03 /* QuickerTipperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC69782C06594400E96C03 /* QuickerTipperApp.swift */; };
 		0EFC697B2C06594400E96C03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC697A2C06594400E96C03 /* ContentView.swift */; };
 		0EFC697D2C06594500E96C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EFC697C2C06594500E96C03 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		0EF7769F2C0B7FEF007B6D57 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		0EF776A12C0E4098007B6D57 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		0EFC69752C06594400E96C03 /* QuickerTipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickerTipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFC69782C06594400E96C03 /* QuickerTipperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickerTipperApp.swift; sourceTree = "<group>"; };
 		0EFC697A2C06594400E96C03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				0EFC69782C06594400E96C03 /* QuickerTipperApp.swift */,
 				0EFC697A2C06594400E96C03 /* ContentView.swift */,
 				0EF7769F2C0B7FEF007B6D57 /* Settings.swift */,
+				0EF776A12C0E4098007B6D57 /* About.swift */,
 				0EFC697C2C06594500E96C03 /* Assets.xcassets */,
 				0EFC697E2C06594500E96C03 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EF776A02C0B7FEF007B6D57 /* Settings.swift in Sources */,
+				0EF776A22C0E4098007B6D57 /* About.swift in Sources */,
 				0EFC697B2C06594400E96C03 /* ContentView.swift in Sources */,
 				0EFC69792C06594400E96C03 /* QuickerTipperApp.swift in Sources */,
 			);
