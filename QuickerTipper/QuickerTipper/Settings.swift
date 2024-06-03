@@ -240,7 +240,6 @@ enum Icon: Int, CaseIterable {
             return "BlackAppIcon"
         }
     }
-    
 }
 
 
