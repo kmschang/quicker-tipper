@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EF776A02C0B7FEF007B6D57 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7769F2C0B7FEF007B6D57 /* Settings.swift */; };
+		0E0619092C0F898100922046 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0619082C0F898100922046 /* Settings.swift */; };
 		0EF776A22C0E4098007B6D57 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF776A12C0E4098007B6D57 /* About.swift */; };
 		0EFC69792C06594400E96C03 /* QuickerTipperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC69782C06594400E96C03 /* QuickerTipperApp.swift */; };
 		0EFC697B2C06594400E96C03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC697A2C06594400E96C03 /* ContentView.swift */; };
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0EF7769F2C0B7FEF007B6D57 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		0E0619082C0F898100922046 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		0EF776A12C0E4098007B6D57 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		0EFC69752C06594400E96C03 /* QuickerTipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickerTipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFC69782C06594400E96C03 /* QuickerTipperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickerTipperApp.swift; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			children = (
 				0EFC69782C06594400E96C03 /* QuickerTipperApp.swift */,
 				0EFC697A2C06594400E96C03 /* ContentView.swift */,
-				0EF7769F2C0B7FEF007B6D57 /* Settings.swift */,
+				0E0619082C0F898100922046 /* Settings.swift */,
 				0EF776A12C0E4098007B6D57 /* About.swift */,
 				0EFC697C2C06594500E96C03 /* Assets.xcassets */,
 				0EFC697E2C06594500E96C03 /* Preview Content */,
@@ -143,9 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EF776A02C0B7FEF007B6D57 /* Settings.swift in Sources */,
 				0EF776A22C0E4098007B6D57 /* About.swift in Sources */,
 				0EFC697B2C06594400E96C03 /* ContentView.swift in Sources */,
+				0E0619092C0F898100922046 /* Settings.swift in Sources */,
 				0EFC69792C06594400E96C03 /* QuickerTipperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +277,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"QuickerTipper/Preview Content\"";
@@ -306,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"QuickerTipper/Preview Content\"";

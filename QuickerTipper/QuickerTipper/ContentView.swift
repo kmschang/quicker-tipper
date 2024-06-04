@@ -70,9 +70,15 @@ struct ContentView: View {
             } .tabItem {
                 Label("Settings", systemImage: "gear")
             }
+            .onAppear() {
+                updateTheme(colorInt: themeColor)
+            }
             
         }
-        .tint(Color(uiColor: themeColor != 7 ? UIColorTheme : colorScheme == .dark ? .white : .black))
+        .onAppear() {
+            updateTheme(colorInt: themeColor)
+        }
+        .tint(themeColor != 7 ? themeColor == 1 ? .red : themeColor == 2 ? .orange : themeColor == 3 ? .yellow : themeColor == 4 ? .green : themeColor == 5 ? .blue : themeColor == 6 ? .purple : colorScheme == .dark ? .white : .black : colorScheme == .dark ? .white : .black)
     }
 }
 
