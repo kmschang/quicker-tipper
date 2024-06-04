@@ -18,6 +18,7 @@ struct About: View {
                 .fill(colorScheme == .dark ? .black : .white)
                 .ignoresSafeArea()
             
+            
         }
     }
 }
