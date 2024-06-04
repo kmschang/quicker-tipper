@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct About: View {
+    
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            // Background
+            Rectangle()
+                .fill(colorScheme == .dark ? .black : .white)
+                .ignoresSafeArea()
+            
+        }
     }
 }
 
