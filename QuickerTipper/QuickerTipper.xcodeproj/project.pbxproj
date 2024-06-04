@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E0619092C0F898100922046 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0619082C0F898100922046 /* Settings.swift */; };
+		0E06190E2C0F918100922046 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E06190D2C0F918100922046 /* DeviceKit */; };
 		0EF776A22C0E4098007B6D57 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF776A12C0E4098007B6D57 /* About.swift */; };
 		0EFC69792C06594400E96C03 /* QuickerTipperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC69782C06594400E96C03 /* QuickerTipperApp.swift */; };
 		0EFC697B2C06594400E96C03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC697A2C06594400E96C03 /* ContentView.swift */; };
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E06190E2C0F918100922046 /* DeviceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = QuickerTipper;
+			packageProductDependencies = (
+				0E06190D2C0F918100922046 /* DeviceKit */,
+			);
 			productName = QuickerTipper;
 			productReference = 0EFC69752C06594400E96C03 /* QuickerTipper.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 0EFC696C2C06594400E96C03;
+			packageReferences = (
+				0E06190C2C0F918100922046 /* XCRemoteSwiftPackageReference "DeviceKit" */,
+			);
 			productRefGroup = 0EFC69762C06594400E96C03 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -354,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E06190C2C0F918100922046 /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devicekit/DeviceKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E06190D2C0F918100922046 /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E06190C2C0F918100922046 /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0EFC696D2C06594400E96C03 /* Project object */;
 }

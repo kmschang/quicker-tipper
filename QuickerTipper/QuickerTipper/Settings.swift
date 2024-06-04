@@ -108,7 +108,7 @@ struct Settings: View {
                                 .frame(height: Buttons.size.height / numButtons - Buttons.size.height / spacing / numButtons)
                                 
                                 // About Page
-                                NavigationLink(destination: About()) {
+                                NavigationLink(destination: About(themeColor: $themeColor, iconColor: $iconColor)) {
                                     GeometryReader { About in
                                         ZStack {
                                             RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
@@ -156,11 +156,6 @@ struct Settings: View {
                 Image(themeButtons.fileName(colorScheme: colorScheme))
                     .resizable()
                     .frame(width: geometry.size.height / 1.5, height: geometry.size.height / 1.5)
-                    .background(
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(Color.white) // or any other color you want for the background
-                            .frame(width: geometry.size.height / 1.5, height: geometry.size.height / 1.5)
-                    )
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                 
                 Image(systemName: themeColor == themeButtons.rawValue ? "checkmark.circle.fill" : "circle")
@@ -180,11 +175,6 @@ struct Settings: View {
                 Image(iconButtons.logoFileName())
                     .resizable()
                     .frame(width: geometry.size.height / 1.5, height: geometry.size.height / 1.5)
-                    .background(
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(Color.white) // or any other color you want for the background
-                            .frame(width: geometry.size.height / 1.5, height: geometry.size.height / 1.5)
-                    )
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                 
                 Image(systemName: iconColor == iconButtons.rawValue ? "checkmark.circle.fill" : "circle")
