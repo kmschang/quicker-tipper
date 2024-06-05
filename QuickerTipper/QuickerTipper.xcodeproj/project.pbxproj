@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E0619092C0F898100922046 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0619082C0F898100922046 /* Settings.swift */; };
 		0E06190E2C0F918100922046 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E06190D2C0F918100922046 /* DeviceKit */; };
+		0EC3D5C22C0FEF48004C37A9 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC3D5C12C0FEF48004C37A9 /* Bill.swift */; };
 		0EF776A22C0E4098007B6D57 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF776A12C0E4098007B6D57 /* About.swift */; };
 		0EFC69792C06594400E96C03 /* QuickerTipperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC69782C06594400E96C03 /* QuickerTipperApp.swift */; };
 		0EFC697B2C06594400E96C03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC697A2C06594400E96C03 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		0E0619082C0F898100922046 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		0EC3D5C12C0FEF48004C37A9 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		0EF776A12C0E4098007B6D57 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		0EFC69752C06594400E96C03 /* QuickerTipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickerTipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFC69782C06594400E96C03 /* QuickerTipperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickerTipperApp.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				0EFC69782C06594400E96C03 /* QuickerTipperApp.swift */,
 				0EFC697A2C06594400E96C03 /* ContentView.swift */,
+				0EC3D5C12C0FEF48004C37A9 /* Bill.swift */,
 				0E0619082C0F898100922046 /* Settings.swift */,
 				0EF776A12C0E4098007B6D57 /* About.swift */,
 				0EFC697C2C06594500E96C03 /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EF776A22C0E4098007B6D57 /* About.swift in Sources */,
+				0EC3D5C22C0FEF48004C37A9 /* Bill.swift in Sources */,
 				0EFC697B2C06594400E96C03 /* ContentView.swift in Sources */,
 				0E0619092C0F898100922046 /* Settings.swift in Sources */,
 				0EFC69792C06594400E96C03 /* QuickerTipperApp.swift in Sources */,
@@ -292,11 +296,15 @@
 				DEVELOPMENT_TEAM = GKM5JVVJFH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Tipper;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +312,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.schang.QuickerTipper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,11 +334,15 @@
 				DEVELOPMENT_TEAM = GKM5JVVJFH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Tipper;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +350,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.schang.QuickerTipper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

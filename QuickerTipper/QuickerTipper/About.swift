@@ -58,17 +58,6 @@ struct About: View {
                     
                     Spacer()
                     
-                    VStack(spacing: FullPage.size.height / 50) {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 20)
-                                .foregroundStyle(colorScheme == .dark ? darkGray : lightGray)
-                            
-                            
-                            
-                        }
-                        
-                    }
-                    
                     
                     ZStack {
                         VStack {

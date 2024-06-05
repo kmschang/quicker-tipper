@@ -52,7 +52,7 @@ struct ContentView: View {
             
             // Bill
             NavigationView {
-                
+                Bill(themeColor: $themeColor)
             } .tabItem {
                 Label("Bill", systemImage: "fork.knife.circle")
             }
